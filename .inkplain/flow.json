@@ -4,7 +4,7 @@
     "slug": "advanced-rag-search-evaluation-engine",
     "name": "Advanced RAG Search & Evaluation Engine"
   },
-  "current": "content",
+  "current": "done",
   "stages": {
     "intro": {
       "status": "done",
@@ -43,7 +43,24 @@
       "started_at": "2026-10-10T10:45:34.117Z",
       "finished_at": "2026-10-10T10:45:34.117Z",
       "updated_by": "api-key:for-chatgpt-test-2"
+    },
+    "content": {
+      "status": "done",
+      "summary": "Completed 8 categories and 45 active lessons: 18 Overview (16 real Python source-backed What-is), 6 STEP categories x 4 implementation lessons, 3 Conclusion. MCP confirms ordered six-tab INKP, zero missing linked docs, checked actual sample CRD, 4M, GitHub and source blocks. CI 7/7 on six branches plus main; newly generated 400x250 cover uploaded to Media Library.",
+      "outputs": {
+        "categories": 8,
+        "items": 45,
+        "theory_lessons": 16,
+        "step_lessons": 24,
+        "conclusion_lessons": 3,
+        "cover_regenerated": true,
+        "portal_url": "/practical-case/advanced-rag-search-evaluation-engine",
+        "structural_qa": true
+      },
+      "started_at": "2026-10-10T10:53:54.583Z",
+      "finished_at": "2026-10-10T10:53:54.583Z",
+      "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T10:45:34.117Z"
+  "updated_at": "2026-10-10T10:53:54.583Z"
 }
