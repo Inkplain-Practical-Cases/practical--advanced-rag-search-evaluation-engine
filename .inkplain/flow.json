@@ -4,7 +4,7 @@
     "slug": "advanced-rag-search-evaluation-engine",
     "name": "Advanced RAG Search & Evaluation Engine"
   },
-  "current": "inkp",
+  "current": "content",
   "stages": {
     "intro": {
       "status": "done",
@@ -31,7 +31,19 @@
       "started_at": "2026-10-10T10:45:28.183Z",
       "finished_at": "2026-10-10T10:45:28.183Z",
       "updated_by": "api-key:for-chatgpt-test-2"
+    },
+    "inkp": {
+      "status": "done",
+      "summary": "Six ordered STEP tabs with 21 linked Process Executor documents; MCP verified zero missing linked docs.",
+      "outputs": {
+        "tabs": 6,
+        "missing_links": 0,
+        "inkp_path": "advanced-rag-search-evaluation-engine.inkp"
+      },
+      "started_at": "2026-10-10T10:45:34.117Z",
+      "finished_at": "2026-10-10T10:45:34.117Z",
+      "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-10T10:45:28.183Z"
+  "updated_at": "2026-10-10T10:45:34.117Z"
 }
