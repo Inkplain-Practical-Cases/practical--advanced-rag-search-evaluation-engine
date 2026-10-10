@@ -1,0 +1,79 @@
+{
+  "format": "inkplain-crd",
+  "version": "1.0",
+  "name": "Advanced RAG STEP-2",
+  "flows": [
+    {
+      "id": "rag",
+      "name": "Grounded retrieval workflow"
+    }
+  ],
+  "step": {
+    "no": 2,
+    "of": 6,
+    "title": "Normalize and expand queries",
+    "branch": "step-02-normalize-and-expand-queries",
+    "previous": "STEP-1.crd",
+    "removed": []
+  },
+  "components": [
+    {
+      "id": "be.s1",
+      "name": "corpus",
+      "kind": "function",
+      "side": "backend",
+      "layer": "provider",
+      "description": "Real deterministic app/corpus.py capability",
+      "flows": [
+        "rag"
+      ],
+      "source": {
+        "file": "app/corpus.py",
+        "symbol": "CORPUS",
+        "lines": [
+          1,
+          100
+        ]
+      },
+      "owner": "rag",
+      "component_reason": "Separately tested cumulative step",
+      "status": "observed",
+      "inputs": [],
+      "validations": [],
+      "operations": [],
+      "outputs": [],
+      "attributes": {},
+      "step_change": "unchanged"
+    },
+    {
+      "id": "be.s2",
+      "name": "query",
+      "kind": "function",
+      "side": "backend",
+      "layer": "service",
+      "description": "Real deterministic app/query.py capability",
+      "flows": [
+        "rag"
+      ],
+      "source": {
+        "file": "app/query.py",
+        "symbol": "prepare_query",
+        "lines": [
+          1,
+          100
+        ]
+      },
+      "owner": "rag",
+      "component_reason": "Separately tested cumulative step",
+      "status": "observed",
+      "inputs": [],
+      "validations": [],
+      "operations": [],
+      "outputs": [],
+      "attributes": {},
+      "step_change": "added"
+    }
+  ],
+  "dependencies": [],
+  "unresolved": []
+}
