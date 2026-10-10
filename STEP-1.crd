@@ -1,0 +1,51 @@
+{
+  "format": "inkplain-crd",
+  "version": "1.0",
+  "name": "Advanced RAG STEP-1",
+  "flows": [
+    {
+      "id": "rag",
+      "name": "Grounded retrieval workflow"
+    }
+  ],
+  "step": {
+    "no": 1,
+    "of": 6,
+    "title": "Create corpus and benchmark fixtures",
+    "branch": "step-01-create-corpus-and-benchmark-fixtures",
+    "previous": null,
+    "removed": []
+  },
+  "components": [
+    {
+      "id": "be.s1",
+      "name": "corpus",
+      "kind": "function",
+      "side": "backend",
+      "layer": "provider",
+      "description": "Real deterministic app/corpus.py capability",
+      "flows": [
+        "rag"
+      ],
+      "source": {
+        "file": "app/corpus.py",
+        "symbol": "CORPUS",
+        "lines": [
+          1,
+          100
+        ]
+      },
+      "owner": "rag",
+      "component_reason": "Separately tested cumulative step",
+      "status": "observed",
+      "inputs": [],
+      "validations": [],
+      "operations": [],
+      "outputs": [],
+      "attributes": {},
+      "step_change": "added"
+    }
+  ],
+  "dependencies": [],
+  "unresolved": []
+}
