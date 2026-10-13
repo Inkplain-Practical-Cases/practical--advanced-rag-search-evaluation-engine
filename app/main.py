@@ -12,3 +12,7 @@ def rag_answer(request:Query):
 @app.get("/rag/benchmark")
 def benchmark():
  return {"results":[{"query":x["query"],**evaluate(x["query"],x["relevant"])} for x in BENCHMARK]}
+
+# Relational metadata-only request outcomes, not corpus passage storage.
+from app.core.request_audit_middleware import RequestAuditMiddleware
+app.add_middleware(RequestAuditMiddleware)
