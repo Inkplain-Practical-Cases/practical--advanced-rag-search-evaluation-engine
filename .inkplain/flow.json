@@ -46,7 +46,7 @@
     },
     "content": {
       "status": "done",
-      "summary": "Source-backed persistence audit completed: Passages and benchmark corpus are static Python fixtures; retrieval and evaluation are pure calculations with no durable vector/database store. No source-derived STEP-N.erd or Database lesson required.",
+      "summary": "Created SQLite RAG request/event audit, source-derived ERD in STEP-6 and main, Simulator tab and database lesson; read-back verified.",
       "outputs": {
         "categories": 8,
         "items": 45,
@@ -57,9 +57,11 @@
         "portal_url": "/practical-case/advanced-rag-search-evaluation-engine",
         "structural_qa": true,
         "erd_audit_complete": true,
-        "erd_applicable_steps": [],
-        "erd_not_applicable": true,
-        "erd_lessons_created": 0,
+        "erd_applicable_steps": [
+          6
+        ],
+        "erd_not_applicable": false,
+        "erd_lessons_created": 1,
         "erd_item_title": "Database (Entity) Relations",
         "erd_audit_note": "Passages and benchmark corpus are static Python fixtures; retrieval and evaluation are pure calculations with no durable vector/database store."
       },
@@ -68,5 +70,5 @@
       "updated_by": "api-key:for-chatgpt-test-2"
     }
   },
-  "updated_at": "2026-10-13T15:14:34.814Z"
+  "updated_at": "2026-10-13T16:08:06.938Z"
 }
